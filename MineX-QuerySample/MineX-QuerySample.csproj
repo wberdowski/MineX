@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MineX.QuerySample</RootNamespace>
+    <Copyright>Copyright © 2020 Wojciech Berdowski</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MineX\MineX.csproj" />
+  </ItemGroup>
+
+</Project>

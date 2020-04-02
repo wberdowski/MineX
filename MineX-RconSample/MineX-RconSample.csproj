@@ -3,8 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>MineXSample</RootNamespace>
+    <RootNamespace>MineX.RconSample</RootNamespace>
     <Copyright>Copyright © 2020 Wojciech Berdowski</Copyright>
+    <AssemblyName>MineX-RconSample</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
