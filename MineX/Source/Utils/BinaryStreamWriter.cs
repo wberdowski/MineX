@@ -3,16 +3,16 @@ using System.Text;
 
 namespace MineX.Utils
 {
-    public class VariableEndianBinaryWriter
+    public class BinaryStreamWriter
     {
         private Stream Stream { get; set; }
 
-        public VariableEndianBinaryWriter()
+        public BinaryStreamWriter()
         {
 
         }
 
-        public VariableEndianBinaryWriter(Stream stream)
+        public BinaryStreamWriter(Stream stream)
         {
             Stream = stream;
         }

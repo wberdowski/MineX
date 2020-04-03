@@ -12,7 +12,7 @@ namespace MineX.Query
             using (var stream = new MemoryStream(bytes, offset, length))
             {
                 var response = new HandshakeResponse();
-                var reader = new VariableEndianBinaryReader(stream);
+                var reader = new BinaryStreamReader(stream);
 
                 response.Type = (QueryPacketType)reader.ReadByte();
                 response.Session = new Session(reader.ReadInt32(ByteOrder.LittleEndian));

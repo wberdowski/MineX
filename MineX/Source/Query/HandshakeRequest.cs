@@ -15,7 +15,7 @@ namespace MineX.Query
         {
             using (var stream = new MemoryStream())
             {
-                var writer = new Utils.VariableEndianBinaryWriter(stream);
+                var writer = new Utils.BinaryStreamWriter(stream);
 
                 writer.Write(Magic, ByteOrder.LittleEndian);
                 writer.Write((byte)Type);

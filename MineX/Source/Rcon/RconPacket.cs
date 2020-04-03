@@ -26,7 +26,7 @@ namespace MineX.Rcon
         {
             using (var stream = new MemoryStream())
             {
-                var writer = new VariableEndianBinaryWriter(stream);
+                var writer = new BinaryStreamWriter(stream);
                 writer.Write(Payload.Length + 10, ByteOrder.BigEndian);
                 writer.Write(RequestId, ByteOrder.BigEndian);
                 writer.Write((int)Type, ByteOrder.BigEndian);
@@ -43,7 +43,7 @@ namespace MineX.Rcon
 
             using (var stream = new MemoryStream(bytes, offset, length))
             {
-                var reader = new VariableEndianBinaryReader(stream);
+                var reader = new BinaryStreamReader(stream);
 
                 packet.Length = reader.ReadInt32(ByteOrder.LittleEndian);
                 packet.RequestId = reader.ReadInt32(ByteOrder.LittleEndian);
