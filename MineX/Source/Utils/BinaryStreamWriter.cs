@@ -76,5 +76,20 @@ namespace MineX.Utils
             Stream.Write(bytes, 0, bytes.Length);
             Stream.WriteByte((byte)'\n');
         }
+
+        /// Source: https://wiki.vg/Data_types#VarInt_and_VarLong
+        public void Write(VarInt value)
+        {
+            do
+            {
+                byte temp = (byte)(value.Value & 0b01111111);
+                value.Value >>= 7;
+                if (value.Value != 0)
+                {
+                    temp |= 0b10000000;
+                }
+                Stream.WriteByte(temp);
+            } while (value.Value != 0);
+        }
     }
 }

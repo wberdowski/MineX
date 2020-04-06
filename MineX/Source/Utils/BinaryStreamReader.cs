@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 
 namespace MineX.Utils
@@ -66,6 +67,27 @@ namespace MineX.Utils
 
                 return Encoding.UTF8.GetString(buffer.ToArray());
             }
+        }
+
+        /// Source: https://wiki.vg/Data_types#VarInt_and_VarLong
+        public VarInt ReadVarInt()
+        {
+            int numRead = 0;
+            VarInt result = new VarInt(0);
+            byte read;
+            do
+            {
+                read = (byte)Stream.ReadByte();
+                int value = (read & 0b01111111);
+                result.Value |= (value << (7 * numRead));
+                numRead++;
+                if (numRead > 5)
+                {
+                    throw new Exception("VarInt is too big");
+                }
+            } while ((read & 0b10000000) != 0);
+
+            return result;
         }
     }
 }

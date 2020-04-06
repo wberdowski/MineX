@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MineX.Samples.Rcon</RootNamespace>
+    <Copyright>Copyright © 2020 Wojciech Berdowski</Copyright>
+    <AssemblyName>MineX.Samples.Rcon</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MineX\MineX.csproj" />
+  </ItemGroup>
+
+</Project>

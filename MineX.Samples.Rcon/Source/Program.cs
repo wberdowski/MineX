@@ -2,7 +2,7 @@
 using System;
 using System.Net.Sockets;
 
-namespace MineX.RconSample
+namespace MineX.Samples.Rcon
 {
     internal class Program
     {

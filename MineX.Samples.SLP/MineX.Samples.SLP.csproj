@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>MineX.QuerySample</RootNamespace>
+    <RootNamespace>MineX.Samples.SLP</RootNamespace>
     <Copyright>Copyright © 2020 Wojciech Berdowski</Copyright>
   </PropertyGroup>
 

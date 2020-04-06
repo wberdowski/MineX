@@ -2,7 +2,7 @@
 using System;
 using System.Net.Sockets;
 
-namespace MineX.QuerySample
+namespace MineX.Samples.Query
 {
     internal class Program
     {
