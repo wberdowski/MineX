@@ -1,4 +1,5 @@
-﻿using MineX.Utils;
+﻿using MineX.Common.Structs;
+using MineX.Common.Utils;
 using System.Collections.Generic;
 using System.IO;
 
@@ -13,7 +14,7 @@ namespace MineX.Query
             using (var stream = new MemoryStream(bytes, offset, length))
             {
                 var response = new FullStatsResponse();
-                var reader = new Utils.BinaryStreamReader(stream);
+                var reader = new BinaryStreamReader(stream);
 
                 response.Type = (QueryPacketType)reader.ReadByte();
                 response.Session = new Session(reader.ReadInt32(ByteOrder.LittleEndian));

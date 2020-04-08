@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace MineX.Rcon
+namespace MineX.Common.Structs
 {
     public class IncorrectPasswordException : Exception
     {

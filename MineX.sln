@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MineX.Samples.Query", "Mine
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MineX.Samples.Rcon", "MineX.Samples.Rcon\MineX.Samples.Rcon.csproj", "{89EDB887-2B46-4C23-938D-8FFEEE074E7C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MineX.Samples.SLP", "MineX.Samples.SLP\MineX.Samples.SLP.csproj", "{E880ED52-0A16-4DE8-81FA-066A77B01E0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MineX.Samples.Slp", "MineX.Samples.SLP\MineX.Samples.Slp.csproj", "{E880ED52-0A16-4DE8-81FA-066A77B01E0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,5 @@
-﻿using MineX.Utils;
+﻿using MineX.Common.Structs;
+using MineX.Common.Utils;
 using System.IO;
 
 namespace MineX.Rcon
@@ -31,7 +32,7 @@ namespace MineX.Rcon
                 writer.Write(RequestId, ByteOrder.BigEndian);
                 writer.Write((int)Type, ByteOrder.BigEndian);
                 stream.Write(Payload);
-                writer.Write((ushort)0, ByteOrder.BigEndian);
+                writer.Write(0, ByteOrder.BigEndian);
 
                 return stream.ToArray();
             }

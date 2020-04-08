@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MineX.Utils
+namespace MineX.Common.Structs
 {
     public struct VarInt
     {

@@ -5,4 +5,9 @@
     <Copyright>Copyright © 2020 Wojciech Berdowski</Copyright>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
 </Project>

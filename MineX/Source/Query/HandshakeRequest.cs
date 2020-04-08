@@ -1,4 +1,5 @@
-﻿using MineX.Utils;
+﻿using MineX.Common.Structs;
+using MineX.Common.Utils;
 using System.IO;
 
 namespace MineX.Query
@@ -15,7 +16,7 @@ namespace MineX.Query
         {
             using (var stream = new MemoryStream())
             {
-                var writer = new Utils.BinaryStreamWriter(stream);
+                var writer = new BinaryStreamWriter(stream);
 
                 writer.Write(Magic, ByteOrder.LittleEndian);
                 writer.Write((byte)Type);

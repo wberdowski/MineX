@@ -1,8 +1,9 @@
-﻿using System;
+﻿using MineX.Common.Structs;
+using System;
 using System.IO;
 using System.Text;
 
-namespace MineX.Utils
+namespace MineX.Common.Utils
 {
     public class BinaryStreamReader
     {
@@ -21,6 +22,13 @@ namespace MineX.Utils
         public byte ReadByte()
         {
             return (byte)Stream.ReadByte();
+        }
+
+        public byte[] ReadByteArray(int offset, int length)
+        {
+            byte[] bytes = new byte[length];
+            Stream.Read(bytes, offset, length);
+            return bytes;
         }
 
         public ushort ReadUShort(ByteOrder order)

@@ -1,4 +1,4 @@
-﻿namespace MineX.Utils
+﻿namespace MineX.Common.Structs
 {
     public enum ByteOrder
     {

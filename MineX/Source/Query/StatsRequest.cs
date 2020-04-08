@@ -1,4 +1,5 @@
-﻿using MineX.Utils;
+﻿using MineX.Common.Structs;
+using MineX.Common.Utils;
 using System.IO;
 
 namespace MineX.Query
