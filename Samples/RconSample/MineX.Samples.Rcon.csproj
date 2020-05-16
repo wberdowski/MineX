@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MineX\MineX.csproj" />
+    <ProjectReference Include="..\..\MineX\MineX.csproj" />
   </ItemGroup>
 
 </Project>

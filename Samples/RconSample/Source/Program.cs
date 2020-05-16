@@ -1,4 +1,5 @@
-﻿using MineX.Rcon;
+﻿using MineX.Common.Structs;
+using MineX.Rcon;
 using System;
 using System.Net.Sockets;
 
